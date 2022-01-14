@@ -15,9 +15,22 @@ class human{
    {
        $this->code=$code;
    }
+   public function getname()
+   {
+       return $this->name;
+   }
+   public function getlastname()
+   {
+       return $this->lastname;
+   }
+   public function getcode()
+   {
+       return $this->code;
+   }
 }
 $hu=new human();
 $hu->setname("alireza");
 $hu->setlastname("asadi");
 $hu->setcode("12345");
-var_dump($hu);
+echo $hu->getname();
+//var_dump($hu);
